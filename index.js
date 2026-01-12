@@ -1,14 +1,9 @@
-
-// function print() {
-//     for (let i = 15; i >= 1; i--) {
-//         console.log(i);
+// let massive = [2, 3, 6];
+// let sum = 0;
+// function calce() {
+//     for (let i = 0; i < massive.length; i++) {
+//         sum += massive[i];
 //     }
+//     console.log(sum);
 // }
-// print()
-
-// function print() {
-//     for (let i = 1; i <= 15; i++) {
-//         console.log(i);
-//     }
-// }
-// print()
+// calce();
