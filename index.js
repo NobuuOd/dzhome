@@ -1,55 +1,28 @@
-
-// function write() {
-//     for (let i = 0; i <= 20; i++) {
-//       if (i % 2 == 1) {
-//         console.log(i);
-//       }
-//     }
+// function multiplicationTable(a) {
+//   for (let i = 1; i <= 10; i++) {
+//    console.log(a * i);
+//   }
 // }
-// write();
+// multiplicationTable(5);
 
-// let massive = [-1, 2, -3, 4];
-// function countPositive(massive) {
-//   let plus = 0;
-//   for (i = 0; i < massive.length; i++) {
-//     if (massive[i] > 0) {
-//       plus++;
+// function namber() {
+//   for (let i = 1; i <= 60; i++) {
+//     if (i % 4 !== 0 && i % 6 !== 0) {
+//       console.log(i)
 //     }
 //   }
-//   console.log(plus);
 // }
-// countPositive([-1, 2, -3, 4]) // 2
-// countPositive([1, 2, -3, 4]) // 3
+// namber();
 
-// function reverse(massive) {
-//   for (i = 0; i < massive.length; i++) {
-//     if (massive[i] < 0) {
-//       massive[i] = massive[i] * -1;
+// function array(massive) {
+//   let max = 0;
+//   for (let i = 0; i < massive.length; i++) {
+//     if (massive[i] > max) {
+//       max = massive[i];
 //     }
 //   }
-//   console.log(massive);
+//   console.log(max);
 // }
-// reverse([-1, 2, -3, 4]) // [1, 2, 3, 4]
-// reverse([-10, 10, 4, -11, -6, 0]) // [10, 10, 4, 11, 6, 
-
-  // function select(array1, array2) {
-  //    if (array1.length > array2.length) {
-  //     console.log(array1);
-  //    } else {
-  //     console.log(array2);
-  //    }
-  // }
-  // select([1, 2, 3], [-1, -2, -3, -4]) // [-1, -2, -3, -4]
-  // select([1, 2, 3, 4, 5], [-1, -2, -3, -4]) // [1, 2, 3, 4, 5]
-
-  // function massGreet(name) {
-  //   let result = 'Hello ' + name[0];
-  //   for(let i = 1; i < name.length - 1; i++) {
-  //     result = result + ', ' + name[i];
-  //   }
-  //    result = result + ' and ' + name[name.length -1];
-  //   console.log(result);
-  // }
-  // massGreet(['Nikita', 'Danila', 'Kirill']) // Hello Nikita, Danila and Kirill
-  // massGreet(['Sonya', 'Katya', 'Nastya']) // Hello Sonya, Katya and Nastya
-
+// array([1, 2, 3, 5]);
+// array([2, 6, 8, 4]);
+// array([8, 13, 14, 19]);
