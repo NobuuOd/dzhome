@@ -1,28 +1,49 @@
-// function multiplicationTable(a) {
-//   for (let i = 1; i <= 10; i++) {
-//    console.log(a * i);
-//   }
+// function writeEven() {
+//    for (let i = 0; i <= 20; i++) {
+//     if (i % 2 == 0) {
+//       console.log(i);
+//     }
+//    }
 // }
-// multiplicationTable(5);
+// writeEven() // 0 2 4 6 ... 16 18 20
 
-// function namber() {
-//   for (let i = 1; i <= 60; i++) {
-//     if (i % 4 !== 0 && i % 6 !== 0) {
-//       console.log(i)
+// // function countNegative(array) {
+// //   let minus = 0;
+// //   for (let i = 0; i < array.length; i++) {
+// //     if (array[i] < 0) {
+// //      minus++;
+// //     }
+// //   }
+// //   console.log(minus);
+// }
+// countNegative([-1, 2, -3, 4]) // 2
+// countNegative([1, 2, -3, 4]) // 1
+
+// function makeNegative(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 0) {
+//       array[i] = array[i] * -1;
 //     }
 //   }
+//   console.log(array);
 // }
-// namber();
+// makeNegative([1, -2, 3, -4]); // [-1, -2, -3, -4]
+// makeNegative([10, -10, 4, 11, -6, 0]); // [-10, -10, -4, -11, -6, 0]
 
-// function array(massive) {
-//   let max = 0;
-//   for (let i = 0; i < massive.length; i++) {
-//     if (massive[i] > max) {
-//       max = massive[i];
-//     }
+// function selectBySum(array1, array2) {
+//   let sum1 = 0;
+//   let sum2 = 0;
+//   for (let i = 0; i < array1.length; i++) {
+//     sum1 += array1[i];
 //   }
-//   console.log(max);
+//   for (let i = 0; i < array2.length; i++) {
+//     sum2 += array2[i];
+//   }
+//   if (sum1 > sum2) {
+//     console.log(array1);
+//   } else {
+//     console.log(array2);
+//   }
 // }
-// array([1, 2, 3, 5]);
-// array([2, 6, 8, 4]);
-// array([8, 13, 14, 19]);
+// selectBySum([1, 2, 3], [4, 5]); // [4, 5] (сумма 6 > 9)
+// selectBySum([10, 20], [5, 5, 5]); // [10, 20] (сумма 30 > 15)
