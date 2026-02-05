@@ -1,49 +1,70 @@
-// function writeEven() {
-//    for (let i = 0; i <= 20; i++) {
-//     if (i % 2 == 0) {
-//       console.log(i);
-//     }
-//    }
-// }
-// writeEven() // 0 2 4 6 ... 16 18 20
-
-// // function countNegative(array) {
-// //   let minus = 0;
-// //   for (let i = 0; i < array.length; i++) {
-// //     if (array[i] < 0) {
-// //      minus++;
-// //     }
-// //   }
-// //   console.log(minus);
-// }
-// countNegative([-1, 2, -3, 4]) // 2
-// countNegative([1, 2, -3, 4]) // 1
-
-// function makeNegative(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] > 0) {
-//       array[i] = array[i] * -1;
+// function splitEvenOdd(massive) {
+//   let chetMassive = [];
+//   let nechetMassive = [];
+//   for (let i = 0; i < massive.length; i++) {
+//     if (massive[i] % 2 == 0) {
+//         chetMassive.push(massive[i]);
+//     } else {
+//         nechetMassive.push(massive[i]);
 //     }
 //   }
-//   console.log(array);
+//   console.log(chetMassive, nechetMassive);
 // }
-// makeNegative([1, -2, 3, -4]); // [-1, -2, -3, -4]
-// makeNegative([10, -10, 4, 11, -6, 0]); // [-10, -10, -4, -11, -6, 0]
+// splitEvenOdd([1, 2, 3, 4, 5, 6]); // [2, 4, 6], [1, 3, 5]
 
-// function selectBySum(array1, array2) {
-//   let sum1 = 0;
-//   let sum2 = 0;
-//   for (let i = 0; i < array1.length; i++) {
-//     sum1 += array1[i];
+// function isPalindrome(massive) {
+//   for (let i = 0; i < massive.length; i++) {
+
 //   }
-//   for (let i = 0; i < array2.length; i++) {
-//     sum2 += array2[i];
+// }
+// isPalindrome([1, 2, 3, 2, 1]); // true
+// isPalindrome([1, 2, 3]); // false
+
+// let n = 0;
+// function writeToNumber(n) {
+//   for (let i = 0; i <= n; i++) {
+//      console.log(i);
 //   }
-//   if (sum1 > sum2) {
-//     console.log(array1);
+// }
+// writeToNumber(5) // 0 1 2 3 4 5
+// writeToNumber(3) // 0 1 2 3
+
+// function formatTime(time) {
+//   const hour = Math.floor(time / 60);
+//   const min = time % 60;
+//   if (min < 10) {
+//     console.log(`${hour}:0${min}`);
 //   } else {
-//     console.log(array2);
+//     console.log(`${hour}:${min}`);
 //   }
 // }
-// selectBySum([1, 2, 3], [4, 5]); // [4, 5] (сумма 6 > 9)
-// selectBySum([10, 20], [5, 5, 5]); // [10, 20] (сумма 30 > 15)
+// formatTime(90); // "1:30"
+// formatTime(125); // "2:05"
+
+// function findMultiples(array) {
+//   chisloarray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 3 == 0 && array[i] % 5 == 0) {
+//       chisloarray.push(array[i]);
+//     }
+//   }
+//   console.log(chisloarray);
+// }
+// findMultiples([1, 3, 5, 15, 30, 45, 7]); // [15, 30, 45]
+
+// function reverse(araay) {
+//   let massive = [];
+//   for (let i = araay.length - 1; i >= 0; i--) {
+//     massive.push(araay[i]);
+//   }
+//   console.log(massive);
+// }
+// reverse([1, 2, 3, 4]); // [4, 3, 2, 1]
+// reverse([1, 2, 3]); // [3, 2, 1]
+
+function reverse(araay) {
+  araay.reverse();
+  console.log(araay);
+}
+reverse([1, 2, 3, 4]); // [4, 3, 2, 1]
+reverse([1, 2, 3]); // [3, 2, 1]
