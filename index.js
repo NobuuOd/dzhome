@@ -1,70 +1,33 @@
-// function splitEvenOdd(massive) {
-//   let chetMassive = [];
-//   let nechetMassive = [];
-//   for (let i = 0; i < massive.length; i++) {
-//     if (massive[i] % 2 == 0) {
-//         chetMassive.push(massive[i]);
-//     } else {
-//         nechetMassive.push(massive[i]);
-//     }
-//   }
-//   console.log(chetMassive, nechetMassive);
+// function chislo(a, b, c) {
+// return b;
 // }
-// splitEvenOdd([1, 2, 3, 4, 5, 6]); // [2, 4, 6], [1, 3, 5]
+// console.log(chislo(1, 4, 8));
 
-// function isPalindrome(massive) {
-//   for (let i = 0; i < massive.length; i++) {
-
-//   }
+// function productOfNumbers(a, b) {
+// const work = a + b;
+// return work;
 // }
-// isPalindrome([1, 2, 3, 2, 1]); // true
-// isPalindrome([1, 2, 3]); // false
+// console.log(productOfNumbers(12, 5));
 
-// let n = 0;
-// function writeToNumber(n) {
-//   for (let i = 0; i <= n; i++) {
-//      console.log(i);
-//   }
-// }
-// writeToNumber(5) // 0 1 2 3 4 5
-// writeToNumber(3) // 0 1 2 3
-
-// function formatTime(time) {
-//   const hour = Math.floor(time / 60);
-//   const min = time % 60;
-//   if (min < 10) {
-//     console.log(`${hour}:0${min}`);
+// function work(a, b) {
+//   const sum =  a + b;
+//   if (sum % 2 == 0) {
+//     return sum;
 //   } else {
-//     console.log(`${hour}:${min}`);
+//     return 0;
 //   }
 // }
-// formatTime(90); // "1:30"
-// formatTime(125); // "2:05"
+// console.log(work(2, 8));
+// console.log(work(4, 3));
 
-// function findMultiples(array) {
-//   chisloarray = [];
+// function examination(array) {
 //   for (let i = 0; i < array.length; i++) {
-//     if (array[i] % 3 == 0 && array[i] % 5 == 0) {
-//       chisloarray.push(array[i]);
+//     if (array[i] < 0) {
+//       return true;
 //     }
 //   }
-//   console.log(chisloarray);
+//   return false;
 // }
-// findMultiples([1, 3, 5, 15, 30, 45, 7]); // [15, 30, 45]
+// console.log(examination([2, 4, -10, 5]));
+// console.log(examination([2, 4, 7, 5]));
 
-// function reverse(araay) {
-//   let massive = [];
-//   for (let i = araay.length - 1; i >= 0; i--) {
-//     massive.push(araay[i]);
-//   }
-//   console.log(massive);
-// }
-// reverse([1, 2, 3, 4]); // [4, 3, 2, 1]
-// reverse([1, 2, 3]); // [3, 2, 1]
-
-function reverse(araay) {
-  araay.reverse();
-  console.log(araay);
-}
-reverse([1, 2, 3, 4]); // [4, 3, 2, 1]
-reverse([1, 2, 3]); // [3, 2, 1]
