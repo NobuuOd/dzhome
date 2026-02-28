@@ -1,32 +1,36 @@
-// function chislo() {
-// return 4;
-// }
-// console.log(chislo());
-
-function productOfNumbers(a, b) {
-  const work = a * b;
-  return work;
-}
-// console.log(productOfNumbers(12, 5));
-
-function work(a, b) {
-  const sum = productOfNumbers(a, b);
-  if (sum % 2 == 0) {
-    return sum;
+function plus(number) {
+  if (number < 0) {
+    return number * -1;
   } else {
-    return 0;
+    return number;
   }
 }
-// console.log(work(2, 8));
-// console.log(work(3, 3));
+// console.log(plus(-5));
 
-function examination(array) {
+function convertMassive(array) {
   for (let i = 0; i < array.length; i++) {
-    if (array[i] < 0) {
-      return true;
-    }
+    array[i] = plus(array[i]);
   }
-  return false;
+  return array;
 }
-console.log(examination([2, 4, -10, 5]));
-console.log(examination([2, 4, 7, 5]));
+// console.log(convertMassive([1, 14, -15, -3]));
+
+function compareArrays(array1, array2) {
+  let sum1 = summaMassive(array1);
+  let sum2 = summaMassive(array2);
+  if (sum1 > sum2) {
+    return array1;
+  } else {
+    return array2;
+  }
+}
+console.log(compareArrays([2, 6, -13, -6], [6, -18, 15, -14]));
+
+function summaMassive(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += plus(array[i]);
+  }
+  return sum;
+}
+// console.log(summaMassive([2, 18, -15, 12]));
