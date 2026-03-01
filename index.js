@@ -1,36 +1,52 @@
-function plus(number) {
-  if (number < 0) {
-    return number * -1;
+function isEven(number) {
+  if (number % 2 == 0) {
+    return true;
   } else {
-    return number;
+    return false;
   }
 }
-// console.log(plus(-5));
+// console.log(isEven(4));
+// console.log(isEven(3));
 
-function convertMassive(array) {
-  for (let i = 0; i < array.length; i++) {
-    array[i] = plus(array[i]);
+function evenArray(massive) {
+  let newMassive = [];
+  for (let i = 0; i < massive.length; i++) {
+    if (isEven(massive[i])) {
+      newMassive.push(massive[i]);
+    }
   }
-  return array;
+  return newMassive;
 }
-// console.log(convertMassive([1, 14, -15, -3]));
+// console.log(evenArray([14, 3, 6, 7]));
+// console.log(evenArray([12, 6, 17, 23]));
 
-function compareArrays(array1, array2) {
-  let sum1 = summaMassive(array1);
-  let sum2 = summaMassive(array2);
-  if (sum1 > sum2) {
-    return array1;
+function oddArray(massive) {
+  let countChet = 0;
+  let countNechet = 0;
+  for (let i = 0; i < massive.length; i++) {
+    if (isEven(massive[i])) {
+      countChet = countChet + 1;
+    } else {
+      countNechet = countNechet + 1;
+    }
+  }
+  if (countChet > countNechet) {
+    return true;
   } else {
-    return array2;
+    return false;
   }
 }
-console.log(compareArrays([2, 6, -13, -6], [6, -18, 15, -14]));
+// console.log(oddArray([13, 12, 6, 8]));
+// // console.log(oddArray([3, 12, 5, 8]));
 
-function summaMassive(array) {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum += plus(array[i]);
+function numberArray(massive) {
+  let countNum = 0;
+  for (let i = 0; i < massive.length; i++) {
+    if (massive[i] % 2 == 0) {
+      countNum = countNum + 1;
+    }
   }
-  return sum;
+  return countNum;
 }
-// console.log(summaMassive([2, 18, -15, 12]));
+// console.log(numberArray([4, 6, 10, 16]));
+// console.log(numberArray([4, 6, 10, 16, 18, 20]));
