@@ -1,11 +1,11 @@
-function isShort(str) {
-  if (str.length < 4) {
-    return true;
-  } else {
-    return false;
-  }
-}
-// console.log(isShort('jhgllo'));
+// function isShort(str) {
+//   if (str.length < 4) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isShort('jhgh'));
 
 function shortArray(massive) {
   let newMassive = [];
@@ -29,11 +29,17 @@ function wordsArray(massive) {
       longWords = longWords + 1;
     }
   }
-  if (shortWords > longWords) {
-    return true;
-  } else {
-    return false;
-  }
+ return shortWords > longWords;
 }
 // console.log(wordsArray(['ключ', 'помидор', 'кот', 'снег']));
 // console.log(wordsArray(['луга', 'вор', 'сок', 'мор']));
+
+
+
+function isShort(str) {
+ return str.length < 4;
+}
+// console.log(isShort('jhgd'));
+
+array = [[1, 2, 45, 16, 17], ['луга', 'вор', 'сок', 'мор']]
+// console.log(array[0][1]);
